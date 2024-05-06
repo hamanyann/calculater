@@ -1,72 +1,117 @@
 .main {
-    display: flex;
-    justify-content: center;
+
+    box-sizing: border-box;
     border: 1px solid #0e0d0d;
-    display: flex;
     flex-direction: column;
-    max-width: 600px;
-    
-  margin: auto;
-  margin-top: 50px;
-  
+    max-width: 500px;
+    min-width: 375px;
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+    justify-content: center;
+
 }
 
 /* 電卓の計算結果 */
 .main-result {
-    width: 50%;
+   
     border: 1px solid;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+
+    justify-content: end;
+    
     margin: auto;
     height: 50px;
-    flex-direction: column;
+    display: block;
     background-color: #f3bfbffd;
     margin-top: 10px;
     margin-bottom: 20px;
-
+    width: 90%;
 }
 
 .main-result p {
     align-self: flex-end;
     margin: 0 20px 0 0;
-    text-align: right;
+    text-align: end;
     font-size: larger;
 }
 
 
 /* 電卓のボタン */
 
-.main-box{
+.main-box {
     display: flex;
-    flex-direction: row;
+    
     text-align: center;
-    margin: auto;
+
 }
 
 .main-button {
-    width: 100px;
+    width: 70px;
+    height: 70px;
     border: 1px solid #cac9c9;
-    display: flex;
+    
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100px;
+
     background-color: #f3f4fa;
-    margin: 0px 10px 10px 10px ;
-    border-radius:15px
+    margin: 0px 5px 5px 5px;
+    border-radius: 15px
+}
+
+.btn-extend {
+    background-color: #ececec;
+    color: #000;
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    font-size: larger;
 
 
 }
 
-.btn-extend{
-    background-color: #ececec;
-    color: #000;
-    border: none;
-    width: 100px;
-    height: 100px;
-    border-radius:15px;
-    font-size: larger;
-    
+/* 電卓のメモリー機能 */
 
+.memory{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.memory-a{
+    background-color: #d9eed6fd;
+    height: 50px;
+    width: 30%;
+    font-size: larger;
+    text-align: end;
+  margin: 10px 0 20px 20px;
+}
+.memory-a:nth-child(2){
+    background-color: #e3f53ffd;
+}
+
+
+
+.memory-box {
+    
+    border: 1px solid;
+
+    justify-content: end;
+    
+    margin: 0 0 0 180px;
+    height: 50px;
+    width: 60%;
+    display: flex;
+    background-color: #f3bfbffd;
+    margin-top: 10px;
+    margin-bottom: 20px;
+   
+}
+
+.memory-button{
+    align-self: flex-end;
+    margin: 0 20px 0 0;
+    text-align: end;
+    font-size: larger;
 }
