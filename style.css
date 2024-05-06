@@ -18,10 +18,10 @@
     border: 1px solid;
 
     justify-content: end;
-    
+    align-self: end;
     margin: auto;
     height: 50px;
-    display: block;
+    display: flex;
     background-color: #f3bfbffd;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -29,7 +29,7 @@
 }
 
 .main-result p {
-    align-self: flex-end;
+    align-self: end;
     margin: 0 20px 0 0;
     text-align: end;
     font-size: larger;
@@ -40,9 +40,9 @@
 
 .main-box {
     display: flex;
-    
+    border: 1px solid #0e0d0d;
     text-align: center;
-
+    justify-content: center;
 }
 
 .main-button {
@@ -71,12 +71,24 @@
 
 }
 
+.btn-extend2 {
+    background-color: #d1d8f5;
+    
+}
+
+.btn-extend3 {
+    background-color: #bef88e;
+    
+}
+
 /* 電卓のメモリー機能 */
 
 .memory{
     display: flex;
     flex-direction: row;
-    
+    width: 60%;
+    justify-content: end;
+    margin: auto;
 }
 
 .memory-a{
@@ -84,7 +96,7 @@
     height: 50px;
     width: 30%;
     font-size: larger;
-    text-align: end;
+    text-align: start;
   margin: 10px 0 20px 20px;
 }
 .memory-a:nth-child(2){
@@ -99,9 +111,9 @@
 
     justify-content: end;
     
-    margin: 0 0 0 180px;
+    margin: 0 0 0 0px;
     height: 50px;
-    width: 60%;
+    width: 100%;
     display: flex;
     background-color: #f3bfbffd;
     margin-top: 10px;
@@ -115,3 +127,12 @@
     text-align: end;
     font-size: larger;
 }
+
+/* 保存呼び出しゾーン */
+.under-box{
+    display: flex;
+    border: 1px solid #0e0d0d;
+    text-align: center;
+}
+
+
