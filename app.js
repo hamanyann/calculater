@@ -8,6 +8,14 @@
     let result = "";
 
     function number(num) {
+        if (result !== "") {
+            b = result;
+            result = ""
+
+
+        }
+
+
         b += num;
         document.getElementById("total").textContent = b;
     }
@@ -29,8 +37,9 @@
 
             if (button.id === "clear") {
                 document.getElementById("total").textContent = 0;
-                document.getElementById("memory").textContent = 0;
+                
                 b = "";
+                result="";
 
             } else if (button.id === "is") {
                 calculate();
